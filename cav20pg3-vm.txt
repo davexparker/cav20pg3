@@ -1,0 +1,18 @@
+PRISM-games 3.0 CAV 2020 artifact submission VM details
+=======================================================
+
+cav20pg3.ova is a VM image saved as an Open Virtual Appliance (OVA) file.
+
+It is available from: http://prismmodelchecker.org/downloads/cav20pg3.ova
+
+The OS is Ubuntu 16.04.6 LTS GNU/Linux (64 bit), with 2048 MB RAM.
+Guest Additions is installed, as well as the tool and all pre-requisites.
+
+It was created and tested using VirtualBox 5.2.18 running on Mac OS 0.13.6.
+The host machine has 2 cores (3.5 GHz Intel Core i7) and 16 GB RAM.
+
+Booting the image should not require a log in.
+But if needed the username is `cav20` and the password is `cav20``.
+
+After boot, open a terminal (left hand menu bar) and `cd cav20pg3`.
+Full instructions are in the README.txt file in that directory.

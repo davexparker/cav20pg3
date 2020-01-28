@@ -1,0 +1,6 @@
+// expected time player 1 eventually sends a packet
+<<p2,p3>>R{"time"}min=?[F s2=3 & s3=3]
+
+// expected time player 1 eventually sends a packet
+// and player two and three form a coalition to send two packets
+<<p1:p2,p3>>min=? (R{"time"}[F s1=3] + R{"time"}[F s2=3 & s3=3])
