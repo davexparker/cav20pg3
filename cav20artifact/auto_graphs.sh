@@ -3,7 +3,7 @@
 set -e # Abort if one of the commands fail
 
 echo
-echo "Generating results for the tables in Figure 2"
+echo "Generating results for the plots in Figure 2"
 
 # investors graph
 echo

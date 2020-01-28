@@ -16,17 +16,19 @@ To check that the tool runs, just type:
  prism-games
 
 (since there are symlinks to the main launch scripts in /home/cav20/bin)
+
 This will simply display some version info.
+For a simple test of the new functionality, try:
 
-For a trivial test of the new functionality, try:
+ cd /home/cav20/prism-games/prism-examples/csgs/simple
+ prism-games medium_access2.prism -const emax=2,q1=0.9,q2=0.75 medium_access2.props -prop 2
 
- cd /home/cav20/prism-games/prism/
- prism-games  test?
+which runs the example from the tool paper.
+You should eventually see: "Result: 1.98"
 
+You can also run the GUI version of the tool of preferred:
 
-
-so running just `prism-games` or `xprism-games` should run the tool.
-
+ xprism-games medium_access2.prism medium_access2.props
 
 
 REPRODUCING RESULTS IN THE PAPER
@@ -41,12 +43,15 @@ To reproduce these results, run the script:
 The PRISM-games model and property files are also in this cav20artifact directory.
 Similarly, there are .csv files containing the values generated and plotted.
 
+We also provide a similar script to generate the results from Table 1.
+This is in auto_table.sh, but this requires more RAM than is available in the VM (2GB).
+Approximately 8GB is need, so if you wish to run these, extend the VM'S RAM.
 
 
 SOURCE CODE
 ===========
 
-
-LOGS
-====
-
+The version of PRISM-games in the VM is compiled from source.
+It is installed in /home/cav20/prism-games.
+Compilation can be achieved with: cd /home/cav20/prism-games/prism; make
+The source code is all within /home/cav20/prism-games/prism/src.
