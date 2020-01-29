@@ -1,9 +1,9 @@
 This directory contains the CAV 2020 artifact submission for the PRISM-games 3.0 paper.
 
 Contents:
-* cav20artifact contains files to reproduce results in the paper
-* pg3toolpaper.pdf is the submitted tool paper
+* cav20artifact contains files/logs to reproduce results in the paper
 * cav20pg3-vm.txt contains details of the VM and its construction
+* pg3toolpaper.pdf is the (near final) submitted tool paper
 
 The PRISM-games tool itself is installed in the VM at /home/cav20/prism-games.
 
