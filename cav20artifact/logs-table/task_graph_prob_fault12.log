@@ -1,0 +1,72 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Tue Jan 28 19:20:39 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=7.1g
+Command line: prism-games task_graph_prob_fault.prism task_graph.props -javamaxmem 8g -const 'k1=12,k2=12,p=0.1' -prop 2
+
+Parsing model file "task_graph_prob_fault.prism"...
+
+Type:        TPTG
+Modules:     scheduler P1 P2 
+Variables:   turn task1 task2 task3 task4 task5 task6 y p1 fail1 x1 p2 fail2 x2 
+
+Parsing properties file "task_graph.props"...
+
+3 properties:
+(1) <<p1>>Pmax=? [ F "tasks_complete" ]
+(2) <<p1>>R{"time"}min=? [ F "tasks_complete" ]
+(3) <<p1>>R{"energy"}min=? [ F "tasks_complete" ]
+
+---------------------------------------------------------------------
+
+Model checking: <<p1>>R{"time"}min=? [ F "tasks_complete" ]
+Model constants: k1=12,k2=12,p=0.1
+
+Performing digital clocks translation...
+Computed clock maximums: {y=0, x1=3, x2=7}
+Computed GCD: 1
+
+Type:        SMG
+Modules:     scheduler P1 P2 
+Variables:   turn task1 task2 task3 task4 task5 task6 y p1 fail1 x1 p2 fail2 x2 
+
+Switching to explicit engine, which supports SMGs...
+
+Model checking: <<p1>>R{"time"}min=? [ F "tasks_complete" ]
+
+Building model...
+
+Computing reachable states... 172131 422710 655482 659948 states
+Reachable states exploration and model construction done in 9.105 secs.
+Sorting reachable states list...
+
+Time for model construction: 10.055 seconds.
+
+Type:        SMG
+States:      659948 (1 initial)
+Transitions: 1798198
+Choices:     1477693
+Max/avg:     5/2.24
+Building reward structure...
+
+Starting expected reachability...
+Starting Prob1 (maxmin)...
+Prob1 (maxmin) took 110 iterations and 37.783 seconds.
+target=15210, inf=102490, rest=542248
+Computing the upper bound where 0.01 is used instead of 0.0
+Starting value iteration (minmax)...
+Value iteration (minmax) took 103 iterations and 27.892 seconds.
+Computed an over-approximation of the solution (in 27 seconds), this will now be used to get the solution
+Starting value iteration (minmax)...
+Value iteration (minmax) took 94 iterations and 19.832 seconds.
+Expected reachability took 85.612 seconds.
+
+Value in the initial state: 17.61646126760919
+
+Time for model checking: 85.991 seconds.
+
+Result: 17.61646126760919 (value in the initial state)
+

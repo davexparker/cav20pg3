@@ -1,0 +1,65 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Tue Jan 28 15:26:18 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=7.1g
+Command line: prism-games two_investors_csg.prism two_investors.props -javamaxmem 8g -prop 2 -javamaxmem 8g -const months=36
+
+Parsing model file "two_investors_csg.prism"...
+
+Type:        CSG
+Modules:     month investor1 investor2 market value probability cap 
+Variables:   m r i1 i2 b1 b2 v p c 
+
+Switching to explicit engine, which supports CSGs...
+
+Parsing properties file "two_investors.props"...
+
+8 properties:
+(1) <<investor1>>R{"profit1"}max=? [ Fc "finished1" ]
+(2) <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+(3) <<investor1>>R{"profit1_lc"}max=? [ Fc "finished1" ]
+(4) <<investor1,investor2>>R{"profit12_lc"}max=? [ Fc "finished12" ]
+(5) <<investor1>>R{"profit1_mc"}max=? [ Fc "finished1" ]
+(6) <<investor1,investor2>>R{"profit12_mc"}max=? [ Fc "finished12" ]
+(7) <<investor1>>R{"profit1_ec"}max=? [ Fc "finished1" ]
+(8) <<investor1,investor2>>R{"profit12_ec"}max=? [ Fc "finished12" ]
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=36
+
+Building model...
+Model constants: months=36
+
+Computing reachable states... 75031 169720 262087 355463 452653 552874 654506 750075 853363 948358 965496 1068761 1175655 1276477 1361062 1398441 states
+Reachable states exploration and model construction done in 48.209 secs.
+Sorting reachable states list...
+
+Time for model construction: 51.204 seconds.
+
+Type:        CSG
+States:      1398441 (1 initial)
+Transitions: 7374616
+Choices:     3495692
+Max/avg:     16/2.50
+Building reward structure...
+
+Starting expected reachability...
+target=40832, inf=0, rest=1357609
+
+Starting value iteration...
+
+Value iteration converged after 74 iterations.
+Precomputation took 130.697 seconds.
+Expected total reward took 1022.269 seconds.
+
+Value in the initial state: 10.625253461318
+
+Time for model checking: 1030.746 seconds.
+
+Result: 10.625253461318 (value in the initial state)
+

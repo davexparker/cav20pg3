@@ -1,0 +1,75 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Tue Jan 28 17:59:56 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=7.1g
+Command line: prism-games robot_coordination.prism robot_coordination.props -prop 2 -javamaxmem 8g -const 'q=0.1,l=20,k=20'
+
+Parsing model file "robot_coordination.prism"...
+
+Type:        CSG
+Modules:     m1 m2 
+Variables:   x1 y1 x2 y2 
+
+Switching to explicit engine, which supports CSGs...
+
+Parsing properties file "robot_coordination.props"...
+
+2 properties:
+(1) <<p1>>Pmax=? [ !"crash" U<=k "goal1" ]/2
+(2) <<p1:p2>>max=? (P[!"crash" U<=k "goal1"] + P[!"crash" U<=k "goal2"])/2
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (P[!"crash" U<=k "goal1"] + P[!"crash" U<=k "goal2"])/2
+Model constants: q=0.1,l=20
+Property constants: k=20
+
+Building model...
+Model constants: q=0.1,l=20
+
+Computing reachable states... 7837 18638 31503 45241 58196 72453 85333 99367 112735 125385 157038 159202 states
+Reachable states exploration and model construction done in 33.11 secs.
+Sorting reachable states list...
+
+Time for model construction: 39.002 seconds.
+
+Type:        CSG
+States:      159202 (1 initial)
+Transitions: 10765010
+Choices:     1252170
+Max/avg:     9/7.87
+
+-- Bounded Equilibria
+1: (0.0,0.0)
+2: (0.0,0.0)
+3: (0.0,0.0)
+4: (0.0,0.0)
+5: (0.0,0.0)
+6: (0.0,0.0)
+7: (0.0,0.0)
+8: (0.0,0.0)
+9: (0.0,0.0)
+10: (0.0,0.0)
+11: (0.0,0.0)
+12: (0.0,0.0)
+13: (0.0,0.0)
+14: (0.0,0.0)
+15: (0.0,0.0)
+16: (0.0,0.0)
+17: (0.0,0.0)
+18: (0.0,0.0)
+19: (0.135085171764,0.135085171764)
+20: (0.505874220659,0.493517401546)
+
+Precomputation took 155.356 seconds.
+Coalition results (initial state): (0.505874220659,0.493517401546)
+
+Value in the initial state: 0.4996958111025
+
+Time for model checking: 1080.877 seconds.
+
+Result: 0.4996958111025 (value in the initial state)
+

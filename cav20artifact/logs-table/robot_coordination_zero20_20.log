@@ -1,0 +1,62 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Tue Jan 28 15:17:06 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=7.1g
+Command line: prism-games robot_coordination.prism robot_coordination.props -prop 1 -javamaxmem 8g -const 'q=0.1,l=20,k=20'
+
+Parsing model file "robot_coordination.prism"...
+
+Type:        CSG
+Modules:     m1 m2 
+Variables:   x1 y1 x2 y2 
+
+Switching to explicit engine, which supports CSGs...
+
+Parsing properties file "robot_coordination.props"...
+
+2 properties:
+(1) <<p1>>Pmax=? [ !"crash" U<=k "goal1" ]/2
+(2) <<p1:p2>>max=? (P[!"crash" U<=k "goal1"] + P[!"crash" U<=k "goal2"])/2
+
+---------------------------------------------------------------------
+
+Model checking: <<p1>>Pmax=? [ !"crash" U<=k "goal1" ]/2
+Model constants: q=0.1,l=20
+Property constants: k=20
+
+Building model...
+Model constants: q=0.1,l=20
+
+Computing reachable states... 13025 28090 44093 58140 71963 86360 99737 113346 127007 159202 states
+Reachable states exploration and model construction done in 29.636 secs.
+Sorting reachable states list...
+
+Time for model construction: 30.938 seconds.
+
+Type:        CSG
+States:      159202 (1 initial)
+Transitions: 10765010
+Choices:     1252170
+Max/avg:     9/7.87
+
+Starting probabilistic reachability (until)...
+target=399, yes=399, no=398, maybe=158405
+
+Starting value iteration...
+Exception raised by lpSolve when computing value for state 106921. lpSolve status: NUMERIC FAILURE encountered
+Rounding up entries...
+Exception raised by lpSolve when computing value for state 98541. lpSolve status: NUMERIC FAILURE encountered
+Rounding up entries...
+
+Value iteration converged after 20 iterations.
+Precomputation took 21.528 seconds.
+
+Value in the initial state: 0.15452541168575
+
+Time for model checking: 114.506 seconds.
+
+Result: 0.15452541168575 (value in the initial state)
+

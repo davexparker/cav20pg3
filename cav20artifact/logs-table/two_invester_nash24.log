@@ -1,0 +1,119 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Tue Jan 28 17:49:19 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=7.1g
+Command line: prism-games two_investors_nash.prism two_investors_nash.props -javamaxmem 8g -prop 1 -javamaxmem 8g -const 'pbar=0.2,months=24'
+
+Parsing model file "two_investors_nash.prism"...
+
+Type:        CSG
+Modules:     month investor1 investor2 market value probability cap 
+Variables:   m r i1 i2 b1 b2 v p c 
+
+Switching to explicit engine, which supports CSGs...
+
+Parsing properties file "two_investors_nash.props"...
+
+3 properties:
+(1) <<investor1:investor2>>max=? (R{"profit1"}[F "finished1"] + R{"profit2"}[F "finished2"])
+(2) <<investor1:investor2>>max=? (R{"profit1_lc"}[F "finished1"] + R{"profit2_ec"}[F "finished2"])
+(3) <<investor1:investor2>>max=? (R{"profit1_lc"}[F "finished1"] + R{"profit2_mc"}[F "finished2"])
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1:investor2>>max=? (R{"profit1"}[F "finished1"] + R{"profit2"}[F "finished2"])
+Model constants: months=24,pbar=0.2
+
+Building model...
+Model constants: months=24,pbar=0.2
+
+Computing reachable states... 97172 201887 330681 438351 478761 states
+Reachable states exploration and model construction done in 12.692 secs.
+Sorting reachable states list...
+
+Time for model construction: 13.465 seconds.
+
+Type:        CSG
+States:      478761 (1 initial)
+Transitions: 2265560
+Choices:     802460
+Max/avg:     4/1.68
+
+Starting expected reachability (max)...
+target=82072, inf=0, rest=396689
+Starting value iteration (max, with Power method)...
+Iteration 43: 5.09 sec so far
+Value iteration (max, with Power method) took 50 iterations, 105656400 multiplications and 6.024 seconds.
+Expected reachability took 10.996 seconds.
+Starting expected reachability (max)...
+target=82072, inf=0, rest=396689
+Starting value iteration (max, with Power method)...
+Iteration 41: 5.06 sec so far
+Value iteration (max, with Power method) took 50 iterations, 105656400 multiplications and 6.247 seconds.
+Expected reachability took 11.475 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (3.75,3.75)
+3: (5.74796139686,5.0)
+4: (5.74796139686,5.0)
+5: (5.74796139686,5.0)
+6: (5.74796139686,5.0)
+7: (5.74796139686,5.0)
+8: (5.74796139686,5.0)
+9: (5.409507915191,5.247200117723)
+10: (5.524999641493,5.098570642297)
+11: (5.632108155668,5.136626964169)
+12: (5.65115170877,5.149807974592)
+13: (5.533413886972,5.234620743228)
+14: (5.623043890034,5.209425740251)
+15: (5.648573409973,5.272633247575)
+16: (5.643733340371,5.285102211052)
+17: (5.673435660917,5.31398734061)
+18: (5.649220563281,5.337033748651)
+19: (5.673923703749,5.359632510844)
+20: (5.674242693823,5.375579806791)
+21: (5.689677197889,5.38785709375)
+22: (5.678546091502,5.395360048256)
+23: (5.671158804504,5.430144355285)
+24: (5.63787379769,5.474746072813)
+25: (5.688544247477,5.440323886782)
+26: (5.65264178415,5.478619037203)
+27: (5.695131950089,5.451835922603)
+28: (5.693585959524,5.458517133605)
+29: (5.697677227578,5.464148508915)
+30: (5.695608181784,5.468446633418)
+31: (5.69089688152,5.481688732106)
+32: (5.678200683988,5.497128964631)
+33: (5.672573054668,5.505469589869)
+34: (5.69894763136,5.480741971624)
+35: (5.676548330821,5.506587027113)
+36: (5.673921866721,5.511027594413)
+37: (5.658935568417,5.527666705639)
+38: (5.674057062095,5.513211898848)
+39: (5.69611103817,5.492411263872)
+40: (5.675684093026,5.513641663077)
+41: (5.669870036779,5.519199476501)
+42: (5.655039276617,5.534757956422)
+43: (5.677742546175,5.513012332024)
+44: (5.687508180969,5.500097224213)
+45: (5.673861788297,5.51721322636)
+46: (5.67081246345,5.520292066573)
+47: (5.671929532026,5.519657343757)
+48: (5.690999451305,5.499710661358)
+49: (5.690999451305,5.499710661358)
+
+Value iteration converged after 49 iterations.
+
+Precomputation took 22.471 seconds.
+Coalition results (initial state): (5.690999451305,5.499710661358)
+
+Value in the initial state: 11.190710112663
+
+Time for model checking: 13110.162 seconds.
+
+Result: 11.190710112663 (value in the initial state)
+

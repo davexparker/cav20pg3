@@ -1,0 +1,65 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Tue Jan 28 18:19:40 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=7.1g
+Command line: prism-games aloha_backoff3.prism aloha_backoff3.props -javamaxmem 8g -prop 1 -const 'D=0,bcmax=5,q=0.9'
+
+Parsing model file "aloha_backoff3.prism"...
+
+Type:        CSG
+Modules:     user1 user2 user3 timer 
+Variables:   s1 tr1 bc1 cd1 t1 s2 tr2 bc2 cd2 t2 s3 tr3 bc3 cd3 t3 t 
+
+Switching to explicit engine, which supports CSGs...
+
+Parsing properties file "aloha_backoff3.props"...
+
+2 properties:
+(1) <<p2,p3>>R{"time"}min=? [ F s2=3&s3=3 ]
+(2) <<p1:p2,p3>>min=? (R{"time"}[F s1=3] + R{"time"}[F s2=3&s3=3])
+
+---------------------------------------------------------------------
+
+Model checking: <<p2,p3>>R{"time"}min=? [ F s2=3&s3=3 ]
+Model constants: bcmax=5,D=0,q=0.9
+
+Building model...
+Model constants: bcmax=5,D=0,q=0.9
+
+Computing reachable states... 84476 126259 313457 466918 556168 states
+Reachable states exploration and model construction done in 14.896 secs.
+Sorting reachable states list...
+
+Time for model construction: 15.697 seconds.
+
+Type:        CSG
+States:      556168 (1 initial)
+Transitions: 2401113
+Choices:     556236
+Max/avg:     8/1.00
+Building reward structure...
+
+Starting expected reachability...
+target=19834, inf=0, rest=536334
+Computing the upper bound where 0.01 is used instead of 0.0
+
+Starting value iteration...
+
+Value iteration converged after 193 iterations.
+Computed an over-approximation of the solution (in 164.992 seconds), this will now be used to get the solution
+
+Starting value iteration...
+
+Value iteration converged after 150 iterations.
+Expected reachability took 317.412 seconds.
+Precomputation took 30.395 seconds.
+
+Value in the initial state: 4.648457274875977
+
+Time for model checking: 317.757 seconds.
+
+Result: 4.648457274875977 (value in the initial state)
+

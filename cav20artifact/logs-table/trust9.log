@@ -1,0 +1,60 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Tue Jan 28 17:58:40 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=7.1g
+Command line: prism-games trust_csg.prism trust_csg.props -javamaxmem 8g -prop 1 -const 'td=1,K=9'
+
+Parsing model file "trust_csg.prism"...
+
+Type:        CSG
+Modules:     requester_m requester1 requester2 requester3 provider1 provider2 provider3 
+Variables:   xm psm x1 ps1 nps1 unpaid1 x2 ps2 nps2 unpaid2 x3 ps3 nps3 unpaid3 alive1 y1 st1 dt1 tth1 trust11 know11 alive2 y2 st2 dt2 tth2 trust21 know21 alive3 y3 st3 dt3 tth3 trust31 know31 
+
+Switching to explicit engine, which supports CSGs...
+
+Parsing properties file "trust_csg.props"...
+
+3 properties:
+(1) <<requesterm,requester1,requester2,requester3>>R{"nopayed"}max=? [ Fc "finished" ]
+(2) <<requesterm,requester1,requester2,requester3>>R{"ratio"}max=? [ Fc "finished" ]
+(3) <<requesterm,requester1,requester2,requester3>>R{"cost"}min=? [ F "finished" ]
+
+---------------------------------------------------------------------
+
+Model checking: <<requesterm,requester1,requester2,requester3>>R{"nopayed"}max=? [ Fc "finished" ]
+Model constants: K=9,td=1
+
+Building model...
+Model constants: K=9,td=1
+
+Computing reachable states... 32461 57309 111088 157011 200477 272637 338194 389640 435871 491788 557913 631951 649908 720587 771022 812309 859975 914832 1015534 1095816 1167732 1226995 1281098 1332876 1387694 1475148 1547761 1624337 1687074 1733134 1782925 1826520 1919167 2005516 2052384 2109643 2158233 2245945 2332516 2421189 2478051 2547918 2653616 2718823 2803747 2892364 2993308 states
+Reachable states exploration and model construction done in 152.308 secs.
+Sorting reachable states list...
+
+Time for model construction: 198.625 seconds.
+
+Type:        CSG
+States:      2993308 (1 initial)
+Transitions: 11392196
+Choices:     8406419
+Max/avg:     16/2.81
+Building reward structure...
+
+Starting expected reachability...
+target=69527, inf=0, rest=2923781
+
+Starting value iteration...
+
+Value iteration converged after 43 iterations.
+Precomputation took 476.113 seconds.
+Expected total reward took 1050.231 seconds.
+
+Value in the initial state: 5.99251781472684
+
+Time for model checking: 1060.546 seconds.
+
+Result: 5.99251781472684 (value in the initial state)
+
