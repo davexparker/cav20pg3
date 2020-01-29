@@ -42,10 +42,13 @@ To reproduce these results, run the script:
 
 The PRISM-games model and property files needed are also in this cav20artifact directory.
 Similarly, there are .csv files containing the values generated and plotted.
+We als include log files for these running in the the logs-graph subdirectory.
 
 We also provide a similar script to generate the results from Table 1.
 This is in auto_table.sh, but this requires more RAM than is available in the VM (2GB).
 Approximately 8GB is need, so if you wish to run these, extend the VM'S RAM.
+Some of these are relatively slow to run, so instead we include all the log files.
+These are in /home/cav20/cav20pg3/cav20artifact/logs-table.
 
 
 OTHER EXAMPLES + DOCUMENTATION
