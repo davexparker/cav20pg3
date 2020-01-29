@@ -64,6 +64,10 @@ and for documentation about the tool itself, see the web site:
 
  http://www.prismmodelchecker.org/games/
 
+To compile a fresh install from source, see e.g.
+
+ /home/cav20/prism-games/prismetc/scripts/prism-install-ubuntu
+
 
 SOURCE CODE
 ===========
