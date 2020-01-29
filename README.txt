@@ -40,12 +40,26 @@ To reproduce these results, run the script:
  cd /home/cav20/cav20pg3/cav20artifact
  bash auto_graphs.sh
 
-The PRISM-games model and property files are also in this cav20artifact directory.
+The PRISM-games model and property files needed are also in this cav20artifact directory.
 Similarly, there are .csv files containing the values generated and plotted.
 
 We also provide a similar script to generate the results from Table 1.
 This is in auto_table.sh, but this requires more RAM than is available in the VM (2GB).
 Approximately 8GB is need, so if you wish to run these, extend the VM'S RAM.
+
+
+OTHER EXAMPLES + DOCUMENTATION
+==============================
+
+To explore PRISM-games 3.0 further, there are additional examples in:
+
+ /home/cav20/prism-games/prism-examples/csgs
+ /home/cav20/prism-games/prism-examples/tptgs
+
+Further information and guidance about case studies,
+and for documentation about the tool itself, see the web site:
+
+ http://www.prismmodelchecker.org/games/
 
 
 SOURCE CODE
@@ -55,3 +69,7 @@ The version of PRISM-games in the VM is compiled from source.
 It is installed in /home/cav20/prism-games.
 Compilation can be achieved with: cd /home/cav20/prism-games/prism; make
 The source code is all within /home/cav20/prism-games/prism/src.
+
+The version of the source put into this artifact is being maintained at:
+
+ https://github.com/davexparker/prism-games/tree/pg3
