@@ -1,0 +1,1010 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Wed Jan 29 07:24:50 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=981.5m
+Command line: prism-games public_good_game.prism public_good_game.props -prop 1 -const 'kmax=2,emax=200,einit=4,f=1.6:0.01:1.8'
+
+Parsing model file "public_good_game.prism"...
+
+Type:        CSG
+Modules:     counter m1 m2 
+Variables:   k c1 s1 c2 s2 
+
+Switching to explicit engine, which supports CSGs...
+
+Parsing properties file "public_good_game.props"...
+
+2 properties:
+(1) <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+(2) <<p1:p2>>max=? (R{"r1i"}[I=K] + R{"r2i"}[I=K])
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.6
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.6
+
+Computing reachable states... 462 states
+Reachable states exploration and model construction done in 0.089 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.114 seconds.
+
+Type:        CSG
+States:      462 (1 initial)
+Transitions: 1086
+Choices:     1086
+Max/avg:     25/2.35
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.011 seconds.
+Expected reachability took 0.023 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.003 seconds.
+Expected reachability took 0.004 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (3.0,2.6666666666666665)
+3: (3.0,2.6666666666666665)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.027 seconds.
+Coalition results (initial state): (3.0,2.6666666666666665)
+
+Value in the initial state: 5.666666666666666
+
+Time for model checking: 0.244 seconds.
+
+Result: 5.666666666666666 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.61
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.61
+
+Computing reachable states... 462 states
+Reachable states exploration and model construction done in 0.024 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.026 seconds.
+
+Type:        CSG
+States:      462 (1 initial)
+Transitions: 1086
+Choices:     1086
+Max/avg:     25/2.35
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (3.0,2.6666666666666665)
+3: (3.0,2.6666666666666665)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (3.0,2.6666666666666665)
+
+Value in the initial state: 5.666666666666666
+
+Time for model checking: 0.151 seconds.
+
+Result: 5.666666666666666 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.62
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.62
+
+Computing reachable states... 462 states
+Reachable states exploration and model construction done in 0.015 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.016 seconds.
+
+Type:        CSG
+States:      462 (1 initial)
+Transitions: 1086
+Choices:     1086
+Max/avg:     25/2.35
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.003 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (3.0,2.6666666666666665)
+3: (3.0,2.6666666666666665)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.004 seconds.
+Coalition results (initial state): (3.0,2.6666666666666665)
+
+Value in the initial state: 5.666666666666666
+
+Time for model checking: 0.117 seconds.
+
+Result: 5.666666666666666 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.63
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.63
+
+Computing reachable states... 462 states
+Reachable states exploration and model construction done in 0.013 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.015 seconds.
+
+Type:        CSG
+States:      462 (1 initial)
+Transitions: 1086
+Choices:     1086
+Max/avg:     25/2.35
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (3.0,2.6666666666666665)
+3: (3.0,2.6666666666666665)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (3.0,2.6666666666666665)
+
+Value in the initial state: 5.666666666666666
+
+Time for model checking: 0.116 seconds.
+
+Result: 5.666666666666666 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.64
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.64
+
+Computing reachable states... 462 states
+Reachable states exploration and model construction done in 0.013 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.015 seconds.
+
+Type:        CSG
+States:      462 (1 initial)
+Transitions: 1086
+Choices:     1086
+Max/avg:     25/2.35
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (3.0,2.6666666666666665)
+3: (3.0,2.6666666666666665)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (3.0,2.6666666666666665)
+
+Value in the initial state: 5.666666666666666
+
+Time for model checking: 0.115 seconds.
+
+Result: 5.666666666666666 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.65
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.65
+
+Computing reachable states... 462 states
+Reachable states exploration and model construction done in 0.013 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.015 seconds.
+
+Type:        CSG
+States:      462 (1 initial)
+Transitions: 1086
+Choices:     1086
+Max/avg:     25/2.35
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (3.0,2.6666666666666665)
+3: (3.0,2.6666666666666665)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (3.0,2.6666666666666665)
+
+Value in the initial state: 5.666666666666666
+
+Time for model checking: 0.117 seconds.
+
+Result: 5.666666666666666 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.66
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.66
+
+Computing reachable states... 462 states
+Reachable states exploration and model construction done in 0.012 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.014 seconds.
+
+Type:        CSG
+States:      462 (1 initial)
+Transitions: 1086
+Choices:     1086
+Max/avg:     25/2.35
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.0 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=461
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4340 multiplications and 0.0 seconds.
+Expected reachability took 0.002 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (3.0,2.6666666666666665)
+3: (3.0,2.6666666666666665)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (3.0,2.6666666666666665)
+
+Value in the initial state: 5.666666666666666
+
+Time for model checking: 0.109 seconds.
+
+Result: 5.666666666666666 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.67
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.67
+
+Computing reachable states... 512 states
+Reachable states exploration and model construction done in 0.012 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.014 seconds.
+
+Type:        CSG
+States:      512 (1 initial)
+Transitions: 1136
+Choices:     1136
+Max/avg:     25/2.22
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (7.0,1.0)
+3: (7.0,1.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (7.0,1.0)
+
+Value in the initial state: 8.0
+
+Time for model checking: 0.145 seconds.
+
+Result: 8.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.68
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.68
+
+Computing reachable states... 512 states
+Reachable states exploration and model construction done in 0.012 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.014 seconds.
+
+Type:        CSG
+States:      512 (1 initial)
+Transitions: 1136
+Choices:     1136
+Max/avg:     25/2.22
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (7.0,1.0)
+3: (7.0,1.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (7.0,1.0)
+
+Value in the initial state: 8.0
+
+Time for model checking: 0.14 seconds.
+
+Result: 8.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.69
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.69
+
+Computing reachable states... 512 states
+Reachable states exploration and model construction done in 0.011 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.012 seconds.
+
+Type:        CSG
+States:      512 (1 initial)
+Transitions: 1136
+Choices:     1136
+Max/avg:     25/2.22
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (7.0,1.0)
+3: (7.0,1.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (7.0,1.0)
+
+Value in the initial state: 8.0
+
+Time for model checking: 0.138 seconds.
+
+Result: 8.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.7
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.7
+
+Computing reachable states... 512 states
+Reachable states exploration and model construction done in 0.017 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.019 seconds.
+
+Type:        CSG
+States:      512 (1 initial)
+Transitions: 1136
+Choices:     1136
+Max/avg:     25/2.22
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (7.0,1.0)
+3: (7.0,1.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (7.0,1.0)
+
+Value in the initial state: 8.0
+
+Time for model checking: 0.139 seconds.
+
+Result: 8.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.71
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.71
+
+Computing reachable states... 512 states
+Reachable states exploration and model construction done in 0.011 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.013 seconds.
+
+Type:        CSG
+States:      512 (1 initial)
+Transitions: 1136
+Choices:     1136
+Max/avg:     25/2.22
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=511
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4540 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (7.0,1.0)
+3: (7.0,1.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (7.0,1.0)
+
+Value in the initial state: 8.0
+
+Time for model checking: 0.137 seconds.
+
+Result: 8.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.72
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.72
+
+Computing reachable states... 562 states
+Reachable states exploration and model construction done in 0.01 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.011 seconds.
+
+Type:        CSG
+States:      562 (1 initial)
+Transitions: 1186
+Choices:     1186
+Max/avg:     25/2.11
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=561
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4740 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=561
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4740 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (4.0,2.0)
+3: (4.0,2.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (4.0,2.0)
+
+Value in the initial state: 6.0
+
+Time for model checking: 0.169 seconds.
+
+Result: 6.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.73
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.73
+
+Computing reachable states... 562 states
+Reachable states exploration and model construction done in 0.011 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.012 seconds.
+
+Type:        CSG
+States:      562 (1 initial)
+Transitions: 1186
+Choices:     1186
+Max/avg:     25/2.11
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=561
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4740 multiplications and 0.0 seconds.
+Expected reachability took 0.0 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=561
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4740 multiplications and 0.0 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (4.0,2.0)
+3: (4.0,2.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.001 seconds.
+Coalition results (initial state): (4.0,2.0)
+
+Value in the initial state: 6.0
+
+Time for model checking: 0.174 seconds.
+
+Result: 6.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.74
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.74
+
+Computing reachable states... 562 states
+Reachable states exploration and model construction done in 0.01 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.012 seconds.
+
+Type:        CSG
+States:      562 (1 initial)
+Transitions: 1186
+Choices:     1186
+Max/avg:     25/2.11
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=561
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4740 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=561
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4740 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (4.0,2.0)
+3: (4.0,2.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (4.0,2.0)
+
+Value in the initial state: 6.0
+
+Time for model checking: 0.23 seconds.
+
+Result: 6.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.75
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.75
+
+Computing reachable states... 587 states
+Reachable states exploration and model construction done in 0.017 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.019 seconds.
+
+Type:        CSG
+States:      587 (1 initial)
+Transitions: 1211
+Choices:     1211
+Max/avg:     25/2.06
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.0 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (5.0,3.0)
+3: (5.0,3.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (5.0,3.0)
+
+Value in the initial state: 8.0
+
+Time for model checking: 0.309 seconds.
+
+Result: 8.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.76
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.76
+
+Computing reachable states... 587 states
+Reachable states exploration and model construction done in 0.016 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.018 seconds.
+
+Type:        CSG
+States:      587 (1 initial)
+Transitions: 1211
+Choices:     1211
+Max/avg:     25/2.06
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (5.0,3.0)
+3: (5.0,3.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.003 seconds.
+Coalition results (initial state): (5.0,3.0)
+
+Value in the initial state: 8.0
+
+Time for model checking: 0.253 seconds.
+
+Result: 8.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.77
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.77
+
+Computing reachable states... 587 states
+Reachable states exploration and model construction done in 0.013 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.014 seconds.
+
+Type:        CSG
+States:      587 (1 initial)
+Transitions: 1211
+Choices:     1211
+Max/avg:     25/2.06
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.0 seconds.
+Expected reachability took 0.0 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.001 seconds.
+Expected reachability took 0.002 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (5.0,3.0)
+3: (5.0,3.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (5.0,3.0)
+
+Value in the initial state: 8.0
+
+Time for model checking: 0.215 seconds.
+
+Result: 8.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.78
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.78
+
+Computing reachable states... 587 states
+Reachable states exploration and model construction done in 0.011 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.012 seconds.
+
+Type:        CSG
+States:      587 (1 initial)
+Transitions: 1211
+Choices:     1211
+Max/avg:     25/2.06
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.0 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.0 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (7.5,4.0)
+3: (7.5,4.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (7.5,4.0)
+
+Value in the initial state: 11.5
+
+Time for model checking: 0.266 seconds.
+
+Result: 11.5 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.79
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.79
+
+Computing reachable states... 587 states
+Reachable states exploration and model construction done in 0.01 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.012 seconds.
+
+Type:        CSG
+States:      587 (1 initial)
+Transitions: 1211
+Choices:     1211
+Max/avg:     25/2.06
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.0 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.0 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (7.5,4.0)
+3: (7.5,4.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (7.5,4.0)
+
+Value in the initial state: 11.5
+
+Time for model checking: 0.246 seconds.
+
+Result: 11.5 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<p1:p2>>max=? (R{"done1"}[F k=kmax+1] + R{"done2"}[F k=kmax+1])
+Model constants: kmax=2,emax=200,einit=4,f=1.8
+
+Building model...
+Model constants: kmax=2,emax=200,einit=4,f=1.8
+
+Computing reachable states... 587 states
+Reachable states exploration and model construction done in 0.01 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.011 seconds.
+
+Type:        CSG
+States:      587 (1 initial)
+Transitions: 1211
+Choices:     1211
+Max/avg:     25/2.06
+
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+Starting expected reachability (max)...
+target=1, inf=0, rest=586
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 4 iterations, 4840 multiplications and 0.001 seconds.
+Expected reachability took 0.001 seconds.
+
+0: (0.0,0.0)
+1: (0.0,0.0)
+2: (5.0,5.0)
+3: (5.0,5.0)
+
+Value iteration converged after 3 iterations.
+
+Precomputation took 0.002 seconds.
+Coalition results (initial state): (5.0,5.0)
+
+Value in the initial state: 10.0
+
+Time for model checking: 0.262 seconds.
+
+Result: 10.0 (value in the initial state)
+

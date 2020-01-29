@@ -1,0 +1,353 @@
+PRISM-games
+===========
+
+Version: 2.1 (based on PRISM 4.5.dev)
+Date: Wed Jan 29 07:23:01 GMT 2020
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=981.5m
+Command line: prism-games two_investors_csg.prism two_investors.props -prop 2 -const 'months=1:1:9'
+
+Parsing model file "two_investors_csg.prism"...
+
+Type:        CSG
+Modules:     month investor1 investor2 market value probability cap 
+Variables:   m r i1 i2 b1 b2 v p c 
+
+Switching to explicit engine, which supports CSGs...
+
+Parsing properties file "two_investors.props"...
+
+8 properties:
+(1) <<investor1>>R{"profit1"}max=? [ Fc "finished1" ]
+(2) <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+(3) <<investor1>>R{"profit1_lc"}max=? [ Fc "finished1" ]
+(4) <<investor1,investor2>>R{"profit12_lc"}max=? [ Fc "finished12" ]
+(5) <<investor1>>R{"profit1_mc"}max=? [ Fc "finished1" ]
+(6) <<investor1,investor2>>R{"profit12_mc"}max=? [ Fc "finished12" ]
+(7) <<investor1>>R{"profit1_ec"}max=? [ Fc "finished1" ]
+(8) <<investor1,investor2>>R{"profit12_ec"}max=? [ Fc "finished12" ]
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=1
+
+Building model...
+Model constants: months=1
+
+Computing reachable states... 61 states
+Reachable states exploration and model construction done in 0.027 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.049 seconds.
+
+Type:        CSG
+States:      61 (1 initial)
+Transitions: 92
+Choices:     64
+Max/avg:     4/1.05
+Building reward structure...
+
+Starting expected reachability...
+target=32, inf=0, rest=29
+
+Starting value iteration...
+
+Value iteration converged after 4 iterations.
+Precomputation took 0.012 seconds.
+Expected total reward took 0.03 seconds.
+
+Value in the initial state: 7.5
+
+Time for model checking: 0.039 seconds.
+
+Result: 7.5 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=2
+
+Building model...
+Model constants: months=2
+
+Computing reachable states... 1052 states
+Reachable states exploration and model construction done in 0.066 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.074 seconds.
+
+Type:        CSG
+States:      1052 (1 initial)
+Transitions: 2851
+Choices:     1255
+Max/avg:     16/1.19
+Building reward structure...
+
+Starting expected reachability...
+target=548, inf=0, rest=504
+
+Starting value iteration...
+
+Value iteration converged after 4 iterations.
+Precomputation took 0.048 seconds.
+Expected total reward took 0.079 seconds.
+
+Value in the initial state: 7.5
+
+Time for model checking: 0.087 seconds.
+
+Result: 7.5 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=3
+
+Building model...
+Model constants: months=3
+
+Computing reachable states... 3664 states
+Reachable states exploration and model construction done in 0.161 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.176 seconds.
+
+Type:        CSG
+States:      3664 (1 initial)
+Transitions: 13104
+Choices:     6216
+Max/avg:     16/1.70
+Building reward structure...
+
+Starting expected reachability...
+target=1315, inf=0, rest=2349
+
+Starting value iteration...
+
+Value iteration converged after 8 iterations.
+Precomputation took 0.282 seconds.
+Expected total reward took 0.509 seconds.
+
+Value in the initial state: 9.899999999998
+
+Time for model checking: 0.521 seconds.
+
+Result: 9.899999999998 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=4
+
+Building model...
+Model constants: months=4
+
+Computing reachable states... 9081 states
+Reachable states exploration and model construction done in 0.223 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.25 seconds.
+
+Type:        CSG
+States:      9081 (1 initial)
+Transitions: 36185
+Choices:     17201
+Max/avg:     16/1.89
+Building reward structure...
+
+Starting expected reachability...
+target=2599, inf=0, rest=6482
+
+Starting value iteration...
+
+Value iteration converged after 10 iterations.
+Precomputation took 0.504 seconds.
+Expected total reward took 1.135 seconds.
+
+Value in the initial state: 9.977083333332
+
+Time for model checking: 1.152 seconds.
+
+Result: 9.977083333332 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=5
+
+Building model...
+Model constants: months=5
+
+Computing reachable states... 18671 states
+Reachable states exploration and model construction done in 0.469 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.511 seconds.
+
+Type:        CSG
+States:      18671 (1 initial)
+Transitions: 79470
+Choices:     37666
+Max/avg:     16/2.02
+Building reward structure...
+
+Starting expected reachability...
+target=4424, inf=0, rest=14247
+
+Starting value iteration...
+
+Value iteration converged after 12 iterations.
+Precomputation took 1.193 seconds.
+Expected total reward took 2.822 seconds.
+
+Value in the initial state: 10.058876851850002
+
+Time for model checking: 2.854 seconds.
+
+Result: 10.058876851850002 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=6
+
+Building model...
+Model constants: months=6
+
+Computing reachable states... 33338 states
+Reachable states exploration and model construction done in 0.931 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.998 seconds.
+
+Type:        CSG
+States:      33338 (1 initial)
+Transitions: 143487
+Choices:     70603
+Max/avg:     16/2.12
+Building reward structure...
+
+Starting expected reachability...
+target=6494, inf=0, rest=26844
+
+Starting value iteration...
+
+Value iteration converged after 14 iterations.
+Precomputation took 2.474 seconds.
+Expected total reward took 5.453 seconds.
+
+Value in the initial state: 10.145312870369
+
+Time for model checking: 5.523 seconds.
+
+Result: 10.145312870369 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=7
+
+Building model...
+Model constants: months=7
+
+Computing reachable states... 53799 states
+Reachable states exploration and model construction done in 1.102 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.17 seconds.
+
+Type:        CSG
+States:      53799 (1 initial)
+Transitions: 237601
+Choices:     117425
+Max/avg:     16/2.18
+Building reward structure...
+
+Starting expected reachability...
+target=8997, inf=0, rest=44802
+
+Starting value iteration...
+
+Value iteration converged after 16 iterations.
+Precomputation took 3.855 seconds.
+Expected total reward took 9.976 seconds.
+
+Value in the initial state: 10.217732071504
+
+Time for model checking: 10.067 seconds.
+
+Result: 10.217732071504 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=8
+
+Building model...
+Model constants: months=8
+
+Computing reachable states... 81342 states
+Reachable states exploration and model construction done in 1.736 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.821 seconds.
+
+Type:        CSG
+States:      81342 (1 initial)
+Transitions: 364999
+Choices:     180899
+Max/avg:     16/2.22
+Building reward structure...
+
+Starting expected reachability...
+target=12170, inf=0, rest=69172
+
+Starting value iteration...
+
+Value iteration converged after 18 iterations.
+Precomputation took 5.547 seconds.
+Expected total reward took 15.265 seconds.
+
+Value in the initial state: 10.27167264132
+
+Time for model checking: 15.324 seconds.
+
+Result: 10.27167264132 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: <<investor1,investor2>>R{"profit12"}max=? [ Fc "finished12" ]
+Model constants: months=9
+
+Building model...
+Model constants: months=9
+
+Computing reachable states... 116838 states
+Reachable states exploration and model construction done in 2.539 secs.
+Sorting reachable states list...
+
+Time for model construction: 2.743 seconds.
+
+Type:        CSG
+States:      116838 (1 initial)
+Transitions: 537836
+Choices:     264332
+Max/avg:     16/2.26
+Building reward structure...
+
+Starting expected reachability...
+target=15541, inf=0, rest=101297
+
+Starting value iteration...
+
+Value iteration converged after 20 iterations.
+Precomputation took 9.03 seconds.
+Expected total reward took 25.796 seconds.
+
+Value in the initial state: 10.333952509260001
+
+Time for model checking: 25.885 seconds.
+
+Result: 10.333952509260001 (value in the initial state)
+
