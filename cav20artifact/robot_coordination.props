@@ -1,7 +1,7 @@
 const int k; // step bound
 
 // player 1 reach its goal without crashing within a deadline
-<<p1>>Pmax=?[ !"crash" U<=k "goal1" ] / 2
+<<p1>>Pmax=?[ !"crash" U<=k "goal1" ]
 
 // players reach their goals within a bounded number of steps
 <<p1:p2>>max=? (P[ !"crash" U<=k "goal1"] + P[ !"crash" U<=k "goal2"]) / 2

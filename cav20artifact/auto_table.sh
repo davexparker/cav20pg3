@@ -14,7 +14,7 @@ echo "Or try the (smaller) examples in auto_graphs.sh instead"
 echo
 echo "Robot co-ordination (writing to logs directory)"
 prism-games robot_coordination.prism robot_coordination.props -prop 1 -javamaxmem 8g -const q=0.1,l=20,k=20 >| logs/robot_coordination_zero20_20.log
-prism-games robot_coordination.prism robot_coordination.props -prop 2 -javamaxmem 8g -const q=0.1,l=25,k=25 >| logs/robot_coordination_nonzero_25_25.log
+prism-games robot_coordination.prism robot_coordination.props -prop 2 -javamaxmem 8g -const q=0.1,l=20,k=20 > logs/robot_coordination_nonzero_20_20.log
 
 # investors table
 echo
