@@ -77,6 +77,8 @@ It is installed in /home/cav20/prism-games.
 Compilation can be achieved with: cd /home/cav20/prism-games/prism; make
 The source code is all within /home/cav20/prism-games/prism/src.
 
-The version of the source put into this artifact is being maintained at:
+The public release of this version of the source code is at:
 
- https://github.com/davexparker/prism-games/tree/pg3
+ https://github.com/prismmodelceckwer/prism-games/tag/v3.0
+ 
+ 
