@@ -21,8 +21,8 @@ prism-games robot_coordination.prism robot_coordination.props -prop 2 -javamaxme
 # investors table
 echo
 echo "Futures market investor (writing to logs directory)"
-prism-games two_investors_csg.prism two_investors.props -prop 2 -javamaxmem 8g -const months=36 >| logs/two_invester_csg36.log
-prism-games two_investors_nash.prism two_investors_nash.props -prop 1 -javamaxmem 8g -const pbar=0.2,months=36 >| logs/two_invester_nash36.log
+prism-games two_investors_csg.prism two_investors.props -prop 2 -javamaxmem 8g -const months=36 >| logs/two_investor_csg36.log
+prism-games two_investors_nash.prism two_investors_nash.props -prop 1 -javamaxmem 8g -const pbar=0.2,months=24 >| logs/two_investor_nash24.log
 
 # user centric
 echo
