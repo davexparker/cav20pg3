@@ -10,6 +10,8 @@ echo "WARNING: This needs more than the 2GB of RAM in this VM"
 echo "You will need to increase the RAM to ~8GB to run all these"
 echo "Or try the (smaller) examples in auto_graphs.sh instead"
 
+mkdir -p logs
+
 # robots table
 echo
 echo "Robot co-ordination (writing to logs directory)"
