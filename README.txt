@@ -79,6 +79,5 @@ The source code is all within /home/cav20/prism-games/prism/src.
 
 The public release of this version of the source code is at:
 
- https://github.com/prismmodelchecker/prism-games/tag/v3.0
- 
+ https://github.com/prismmodelchecker/prism-games/releases/tag/v3.0 
  
